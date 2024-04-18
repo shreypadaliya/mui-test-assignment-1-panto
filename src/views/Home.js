@@ -2,10 +2,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import {
   Box,
-  InputAdornment,
   TextField,
-  Button,
-  IconButton,
   Typography,
 } from "@mui/material";
 import mbg from "../assets/imgs/Rectangle 1441.png";
@@ -146,9 +143,8 @@ function Home() {
           </Box>
         </Box>
       </Box>
-
-      <Whychose></Whychose>
-      <Chaircard></Chaircard>
+      <Whychose/>
+      <Chaircard/>
       <Exp/>
       <Material/>
       <Box sx={{display:"flex",justifyContent:"center",textAlign:"center",alignItems:"center",color:"#E58411",fontFamily:"gilroy-regular",flexDirection:"column",fontSize:"18px",lineHeight:"21px",marginTop:"60px",fontWeight:"600"}}>
@@ -161,7 +157,6 @@ function Home() {
         <Imagecarousel />
       </div>
       <Footer></Footer>
-      
     </Box>
   );
 }

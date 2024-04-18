@@ -45,13 +45,38 @@
 @media screen and (max-width: 768px) {
     .next-btn{
         top: 550px;
-        left: 500px;
+        left: 300px;
     }
     
     
     .pre-btn{
         top: 550px;
-        left: 200px;
+        left: 100px;
+    }
+
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .next-btn{
+        top: 550px;
+        left: 700px;
+    }
+    
+    
+    .pre-btn{
+        top: 550px;
+        left: 100px;
     }
   }
-  
+  @media only screen and (min-width: 1024px) and (max-width: 1500px) {
+    .next-btn{
+        top: 550px;
+        right: 200px;
+    }
+    
+    
+    .pre-btn{
+        top: 550px;
+        left: 240px;
+    }
+  } 
+

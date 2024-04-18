@@ -13,7 +13,6 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 const Footer = () => {
   return (
     <footer style={{ marginTop: "11%", backgroundColor: "#f7f7f7", padding: "5%" }}>
-    <div></div>
       <Container maxWidth="lg">
         <Grid container spacing={4}>
           <Grid item xs={12} sm={6} md={3}>
@@ -77,19 +76,19 @@ const Footer = () => {
               </Typography>
               <Typography  style={{ fontSize: "15px", color: "#1e1e1e", lineHeight: "160%", opacity: "0.8", fontFamily: "gilroy-regular", display: "flex", alignItems: "center" }}>
                 <FacebookIcon style={{ marginRight: "5px" }} />
-                <Link href="#" color="inherit">
+                <Link href="https://www.facebook.com/" color="inherit">
                   Facebook
                 </Link>
               </Typography>
               <Typography style={{ fontSize: "15px", color: "#1e1e1e", lineHeight: "160%", opacity: "0.8", fontFamily: "gilroy-regular", display: "flex", alignItems: "center" }}>
                 <TwitterIcon style={{ marginRight: "5px" }} />
-                <Link href="#" color="inherit">
+                <Link href="https://twitter.com/?lang=en" color="inherit">
                  Twitter
                 </Link>
               </Typography>
               <Typography  style={{ fontSize: "15px", color: "#1e1e1e", lineHeight: "160%", opacity: "0.8", fontFamily: "gilroy-regular", display: "flex", alignItems: "center" }}>
                 <InstagramIcon style={{ marginRight: "5px" }} />
-                <Link href="#" color="inherit">
+                <Link href="https://www.instagram.com/" color="inherit">
                   Instagram
                 </Link>
               </Typography>
@@ -101,11 +100,11 @@ const Footer = () => {
           <Typography variant="body2" color="textSecondary" align="center" style={{ color: "#1e1e1e", opacity: "0.8" }}>
             &copy; {new Date().getFullYear()} Copyright
           </Typography>
-          <Typography variant="body2" color="textSecondary" align="center" style={{ color: "#1e2833", opacity: "0.5" }}>
+          <Typography variant="body2" color="textSecondary" align="center" style={{ color: "#1e2833", opacity: "0.5",paddingRight:"75px" }} >
             <Link color="inherit" href="#">
               Terms & Conditions
             </Link>
-            
+            <span style={{ margin: "0 8px" }}>  </span> {/* Add spacing */}
             <Link color="inherit" href="#">
               Policy Privacy
             </Link>

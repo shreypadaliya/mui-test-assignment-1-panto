@@ -20,7 +20,7 @@ const Navbar = () => {
         alignItems: "center",
         justifyContent: "space-between",
         padding: "10px",
-        width: "100%",
+        width: {xs:"88%",md:"100%"},
         height: "50px",
         backgroundColor: "transparent",
         position: "absolute",
@@ -28,7 +28,14 @@ const Navbar = () => {
         marginTop: "26px",
       }}
     >
-      <Box sx={{ display: "inline", left: { xs: "40px", md: "60px" ,lg:"80px",xl:"80px"}, position: "relative" }}>
+      
+      <Box
+        sx={{
+          display: { xs: "none", sm: "inline" }, 
+          left: { xs: "40px", md: "60px", lg: "80px", xl: "80px" },
+          position: "relative",
+        }}
+      >
         <img src={ipanto} alt="" />
       </Box>
 
@@ -54,6 +61,7 @@ const Navbar = () => {
             listStyleType: "none",
             fontSize: "18px",
             alignItems: "center",
+            
           }}
         >
           <div style={{ display: "flex", alignItems: "center" }}>
