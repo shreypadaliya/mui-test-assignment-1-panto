@@ -8,7 +8,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
 const WhyChoose = () => {
-  const [showInfo, setShowInfo] = useState([false, false, false]);
+  const [showInfo, setShowInfo] = useState([false]);
 
   const toggleInfo = (index) => {
     const newShowInfo = [...showInfo];
@@ -50,12 +50,12 @@ const WhyChoose = () => {
                   )}
               </Typography>
               <IconButton sx={{ paddingLeft: '0px' }} onClick={() => toggleInfo(index)}>
-                <img src={moreinfo} alt={`IMGG${index + 1}`} style={{ marginTop: '6px' }} />
+                <img src={moreinfo} style={{ marginTop: '6px' }} />
               </IconButton>
               {showInfo[index] && (
                 <Box sx={{ marginTop: '10px' }}>
                   <Typography variant="body1" sx={{ color: '1E1E1E', fontWeight: '300', fontSize: '14px', fontFamily: 'gilroy-regular' }}>
-                    Additional information goes here...
+                    
                   </Typography>
                 </Box>
               )}
